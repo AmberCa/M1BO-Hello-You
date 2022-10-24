@@ -53,9 +53,9 @@ def uitlegfac():
     print("We work in a system here in the walls. To keep order and happiness.")
     print ("The funtions are groups. We have 5 groups but if you don't belong in one of them you become Factoinless.")
     print ("Abnegation")
-    print ("Selfless, if you go to this group")
+    print ("Selfless, if you go to this group you need to put others before yourself. You live to help people.")
     print ("Amity")
-    print ("Paechful, if you go to this group")
+    print ("Paechful, if you go to this group you become a famer you need to be kind to people. You show them kindness of people.")
     print ("Candor")
     print ("Honest, if you go to this group")
     print ("Dauntless")
@@ -71,20 +71,27 @@ def vraagc():
     print ("a: Abnegation  b: Amity  c: Candor  d: Dauntless  e: Erudite")
     antc = input()
     if antc ==("a"):
-        print ("")
+        print ("Good choice, we like others more then ourself. We help the people we help the world.")
+        introab()
     if antc ==("b"):
-        print ("")
+        print ("Good choice, ")
     if antc ==("c"):
-        print ("")
+        print ("Good choice, ")
     if antc ==("d"):
-        print ("")
+        print ("Good choice, ")
     if antc ==("e"):
-        print ("")
+        print ("Good choice, ")
     else:
         print ("Not a option")
         vraagc()
-    
 
+#abnegation intro uitleg    
+def introab():
+    print ("There is a person on stage they say:")
+    print ("Welcome folks, we are the group of Abonegation.We make sure that there is respect that allows us to live here. Our job is to arrange everything in this city, so we make decisions. We are a neural group because we put others before ourselves.")
+    print ("You need to come with us for your decision. You walk with them.")
+
+  
 
 introoorlog()
 
