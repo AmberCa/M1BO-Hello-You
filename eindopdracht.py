@@ -86,8 +86,8 @@ def vraagc():
     
 
 
-
 introoorlog()
+
 def voorbeeldq():
     print ("")
     antq = input()
