@@ -11,7 +11,7 @@ def introoorlog():
     print ("There is a war going on...")
     vraaga()
     
-#vraaga
+#vraag waar je bent en wat je gaat doen
 def vraaga():
     print ("You can a: Hide  b: Walk around  c: Run around")
     anta = input()
@@ -74,13 +74,17 @@ def vraagc():
         print ("Good choice, we like others more then ourself. We help the people we help the world.")
         introab()
     if antc ==("b"):
-        print ("Good choice, ")
+        print ("Good choice, we are friendly to people and animals. We will be helpful for everybody.")
+        introam()
     if antc ==("c"):
-        print ("Good choice, ")
+        print ("Good choice, everybody needs to be honest. In a society you have to speak the truth.")
+        introca()
     if antc ==("d"):
-        print ("Good choice, ")
+        print ("Good choice, we will see what you fear and you will overcome it. You are the hero here not the coward!")
+        introda()
     if antc ==("e"):
-        print ("Good choice, ")
+        print ("Good choice, lets find out what were comes from. Someone has to invent new stuf.")
+        introer()
     else:
         print ("Not a option")
         vraagc()
@@ -91,6 +95,26 @@ def introab():
     print ("Welcome folks, we are the group of Abonegation.We make sure that there is respect that allows us to live here. Our job is to arrange everything in this city, so we make decisions. We are a neural group because we put others before ourselves.")
     print ("You need to come with us for your decision. You walk with them.")
 
+#amity intro uitleg & einde
+def introam():
+    print ("You were sent to the farm lands.")
+    print ("The people here are kind and helpful.")
+    print ("A couple years pass and you are still happy were you are.")
+    print ("You die peaceful with lots of people that care about you when it is your time.")
+    print ("For now you farm with the rest of the people that help you.")
+
+
+#candor into uitleg
+def introca():
+    print ("")
+
+#Dauntless into uitleg
+def introda():
+    print ("")
+
+#Erudite into uitleg
+def introer():
+    print ("")
   
 
 introoorlog()
