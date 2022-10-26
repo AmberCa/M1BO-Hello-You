@@ -145,7 +145,7 @@ def carecht():
         print (end)
     if antcar ==("b"):
         print ("You were wrong")
-        print ("We have too large a population in this town and we don't want any legislators here!")
+        print ("We have too large a population in this town and we don't want any liars here!")
         print ("You yourself are condemned by your friends in Candor. You were killed by your friends...")
         print (end)
     else:
