@@ -2,6 +2,7 @@
 
 
 #intro oorlog
+from multiprocessing.resource_sharer import stop
 from telnetlib import AUTHENTICATION
 
 
@@ -20,6 +21,8 @@ def vraaga():
         print ("In your hut is no food and water")
         print ("You can't go anywere. The door is broken.")
         print ("You died, because you don't have food or water")
+        print (end)
+        
     if anta == ("b"):
         print ("You look around and you see somthing in the distance.")
         vraagb()
@@ -29,6 +32,7 @@ def vraaga():
         print ("You see nothing but the sun and sand.")
         print ("You have no food or water.")
         print ("You died, because you don't have food or water")
+        print (end)
     else:
         print ("Not a option")
         vraaga()
@@ -45,6 +49,7 @@ def vraagb():
     if antb ==("b"):
         print ("The people on the wall don't like that and saw you as a risk for there security")
         print ("You were shoot till dead")
+        print (end)
     else:
         print ("Not a option")
         vraagb()
@@ -102,11 +107,22 @@ def introam():
     print ("A couple years pass and you are still happy were you are.")
     print ("You die peaceful with lots of people that care about you when it is your time.")
     print ("For now you farm with the rest of the people that help you.")
+    print (end)
+   
 
 
 #candor into uitleg
 def introca():
-    print ("")
+    print ("So you always tell the truth?")
+    print ("Then you belong to this group.")
+    print ("Said a man on a podium.")
+    print ("We are the jury/judges in this city.")
+    print ("We bring justice to this city.")
+    print ("You are about to make your first decision and make sure it is judged fairly, otherwise you will be kicked out of this group.")
+    print ("Be aware of unable to pick a new one.")
+    carecht()
+
+
 
 #Dauntless into uitleg
 def introda():
@@ -115,7 +131,29 @@ def introda():
 #Erudite into uitleg
 def introer():
     print ("")
-  
+
+
+#rechtbank keuze
+def carecht():
+    print ("Your first assignment in this city.")
+    print ("There are a group of people are they guilty?")
+    print ("a: Yes (kill them)  b: No (let them go)")
+    antcar = input()
+    if antcar ==("a"):
+        print ("You made the right choice they were guilty.")
+        print ("You live happily ever after.")
+        print (end)
+    if antcar ==("b"):
+        print ("You were wrong")
+        print ("We have too large a population in this town and we don't want any legislators here!")
+        print ("You yourself are condemned by your friends in Candor. You were killed by your friends...")
+        print (end)
+    else:
+        print ("Not a option")
+        carecht()
+
+
+end = "The end"
 
 introoorlog()
 
