@@ -69,7 +69,6 @@ def uitlegfac():
     print ("Intellectual, if you go to this group you can find important stuff and you can play with it. You are very smart and whant to look for new possibilities.")
     vraagc()
 
-
 #vraag wat bij jouw past
 def vraagc():
     print ("What do you want to be in this world?")
@@ -109,8 +108,6 @@ def introam():
     print ("You die peaceful with lots of people that care about you when it is your time.")
     print ("For now you farm with the rest of the people that help you.")
     print (end)
-   
-
 
 #candor into uitleg
 def introca():
@@ -123,11 +120,14 @@ def introca():
     print ("Be aware of unable to pick a new one.")
     carecht()
 
-
-
 #Dauntless into uitleg
 def introda():
-    print ("")
+    print ("We are like the police of this city.")
+    print ("So act like it no more mistakes we need to keep people in check!")
+    print ("Said the man on stage.")
+    print ("You all are wall protection for now! So move it!")
+    print ("You walk to the wall and you see far in the desserd that there is a group of wild hunting animals is coming.")
+    keuzedawall()
 
 #Erudite into uitleg
 def introer():
@@ -169,12 +169,72 @@ def keuzeabeinde():
         print ("Not a option")
         keuzeabeinde()
 
+#keuze 1 da 
+def keuzedawall():
+    print ("You look around and find a few weapons.")
+    print ("What do you get?")
+    print ("a: sword  b: bow and arrow  c: bad  d: hide")
+    antda1 = input()
+    if antda1 ==("c") or antda1 ==("b"):
+        print ("O no, they come closer and you can't defend yourself anymore... They took your weapon.")
+        print ("You fall and the animals are over you and rip you apart.")
+        print ("You are dead.")
+        print (end)
+    if antda1 ==("c"):
+        print ("You made it to a safer place but you are out of arrows!")
+        vraagda2()
+    if antda1 == ("d"):
+        print ("You found shelter but they can smell you.")
+        print("They foud you, you try to fight.")
+        print ("You fall and the animals are over you and rip you apart.")
+        print ("You are dead.")
+        print (end)
+    else:
+        print ("Not a option")
+        keuzedawall()
+
+#keuze 2 da
+def vraagda2():
+    print ("The animals are still comming! What do you do?")
+    print ("a: get a ohter weapon  b: run away  c: walk away")
+    antda2 = input()
+    if antda2 ==("a"):
+        wapen2()
+    if antda2 ==("b"):
+        print ("You run and run...")
+        introoorlog()
+    if antda2 ==("c"):
+        print ("The animals are faster and find you!")
+        print ("They jump on you and you fall and the animals are over you and rip you apart.")
+        print ("You are dead.")
+        print (end)
+    else:
+        print ("Not a option")
+        vraagda2()
+
+#wapen2 eind...
+def wapen2():
+    print ("a: knive  b: a toilet seat  c: bad  d: sword")
+    antda3 = input()
+    if antda3 ==("a") or antda3 ==("b") or antda3 ==("c") or antda3 ==("d"):
+        print ("O no, they come closer and you can't defend yourself anymore... They took your weapon.")
+        print ("You fall and the animals are over you and rip you apart.")
+        print ("You are dead.")
+        print (end)
+    else:
+        print ("Not a option")
+        wapen2()
+
+
+
+
 
 end = "The end"
 
 introoorlog()
 
 def voorbeeldq():
+    print ("")
     print ("")
     antq = input()
     if antq ==("a"):
