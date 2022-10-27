@@ -1,6 +1,6 @@
 "# M1BO-Hello-You" 
 
-
+end = "The end"
 #intro oorlog
 from multiprocessing.resource_sharer import stop
 from telnetlib import AUTHENTICATION
@@ -22,6 +22,7 @@ def vraaga():
         print ("You can't go anywere. The door is broken.")
         print ("You died, because you don't have food or water")
         print (end)
+        opnieuw()
         
     if anta == ("b"):
         print ("You look around and you see somthing in the distance.")
@@ -33,6 +34,7 @@ def vraaga():
         print ("You have no food or water.")
         print ("You died, because you don't have food or water")
         print (end)
+        opnieuw()
     else:
         print ("Not a option")
         vraaga()
@@ -50,9 +52,11 @@ def vraagb():
         print ("The people on the wall don't like that and saw you as a risk for there security")
         print ("You were shoot till dead")
         print (end)
+        opnieuw()
     else:
         print ("Not a option")
         vraagb()
+
 #uitleg groepen in de muur
 def uitlegfac():
     print("We work in a system here in the walls. To keep order and happiness.")
@@ -108,6 +112,7 @@ def introam():
     print ("You die peaceful with lots of people that care about you when it is your time.")
     print ("For now you farm with the rest of the people that help you.")
     print (end)
+    opnieuw()
 
 #candor into uitleg
 def introca():
@@ -131,8 +136,8 @@ def introda():
 
 #Erudite into uitleg
 def introer():
-    print ("")
-
+    print ("Welcome to Erudite. You have the qualities of a researcher. In this city you are now a researcher. Welcome to us. If you have a research question, make sure you answer it correctly.")
+    edvraagonderzoek()
 
 #rechtbank keuze
 def carecht():
@@ -144,11 +149,13 @@ def carecht():
         print ("You made the right choice they were guilty.")
         print ("You live happily ever after.")
         print (end)
+        opnieuw()
     if antcar ==("b"):
         print ("You were wrong")
         print ("We have too large a population in this town and we don't want any liars here!")
         print ("You are condemned by your friends in Candor. You were killed by your friends...")
         print (end)
+        opnieuw()
     else:
         print ("Not a option")
         carecht()
@@ -162,9 +169,11 @@ def keuzeabeinde():
         print ("So you think more about yourself than the rest that is not possible in this group.")
         print ("You will be dragged to court yourself... You were punished your punishment is death.")
         print (end)
+        opnieuw()
     if antab ==("b"):
         print ("You made the right choice and live happily ever after.")
         print (end)
+        opnieuw()
     else:
         print ("Not a option")
         keuzeabeinde()
@@ -180,6 +189,7 @@ def keuzedawall():
         print ("You fall and the animals are over you and rip you apart.")
         print ("You are dead.")
         print (end)
+        opnieuw()
     if antda1 ==("c"):
         print ("You made it to a safer place but you are out of arrows!")
         vraagda2()
@@ -189,6 +199,7 @@ def keuzedawall():
         print ("You fall and the animals are over you and rip you apart.")
         print ("You are dead.")
         print (end)
+        opnieuw()
     else:
         print ("Not a option")
         keuzedawall()
@@ -208,11 +219,12 @@ def vraagda2():
         print ("They jump on you and you fall and the animals are over you and rip you apart.")
         print ("You are dead.")
         print (end)
+        opnieuw()
     else:
         print ("Not a option")
         vraagda2()
 
-#wapen2 eind...
+#wapen2 eind... da
 def wapen2():
     print ("a: knive  b: a toilet seat  c: bad  d: sword")
     antda3 = input()
@@ -221,28 +233,43 @@ def wapen2():
         print ("You fall and the animals are over you and rip you apart.")
         print ("You are dead.")
         print (end)
+        opnieuw()
     else:
         print ("Not a option")
         wapen2()
 
+#ed vraag onderzoek
+def edvraagonderzoek():
+    print ("How can dust form in the air?") 
+    print ("a: it was always there alone forms a liquid substance on the ground.")
+    print ("b: it is always all there but you do not see it. When it automatically forms a larger particle so that you can see it.")
+    anted = input()
+    if anted == ("a"):
+        print ("Wrong!")
+        print ("You will be dragged to court... You were punished your punishment is death.")
+        print (end)
+        opnieuw()
+    if anted == ("b"):
+        print ("Good job you are a true researcher.")
+        print ("You live happily ever after.")
+        print (end)
+        opnieuw()
+    else: 
+        print ("Not a option")
+        edvraagonderzoek()
 
-
-
-
-end = "The end"
-
-introoorlog()
-
-def voorbeeldq():
-    print ("")
-    print ("")
-    antq = input()
-    if antq ==("a"):
-        print ("")
-    if antq ==("b"):
-        print ("")
-    if antq ==("c"):
-        print ("")
+#opnieuw?
+def opnieuw():
+    print ("Do you want to play agian?")
+    print ("y/n")
+    antopnieuw = input()
+    if antopnieuw ==("y"):
+        print ("Oke here you go.")
+        introoorlog()
+    if antopnieuw ==("n"):
+        print ("Oke have a nice day/ night.")
     else:
         print ("Not a option")
-        voorbeeldq()
+        opnieuw()
+
+introoorlog()
