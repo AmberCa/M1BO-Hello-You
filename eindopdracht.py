@@ -64,7 +64,7 @@ def uitlegfac():
     print ("Abnegation")
     print ("Selfless, if you go to this group you need to put others before yourself. You live to help people. Your job is township of the town.")
     print ("Amity")
-    print ("Paechful, if you go to this group you become a famer you need to be kind to people. You show them kindness of people. You become a farmer.")
+    print ("Paechful, if you go to this group you become a famer your personality is to be kind to people. You show them kindness of people.")
     print ("Candor")
     print ("Honest, if you go to this group you have a very strong opinion about every thing. You become the jury in court.")
     print ("Dauntless")
@@ -152,8 +152,8 @@ def carecht():
         opnieuw()
     if antcar ==("b"):
         print ("You were wrong")
-        print ("We have too large a population in this town and we don't want any liars here!")
-        print ("You are condemned by your friends in Candor. You were killed by your friends...")
+        print ("We have a too large population in this town and we don't want any liars here!")
+        print ("You are condemned by your friends in Candor. You were convicted/ killed by your friends...")
         print (end)
         opnieuw()
     else:
@@ -241,8 +241,8 @@ def wapen2():
 #ed vraag onderzoek
 def edvraagonderzoek():
     print ("How can dust form in the air?") 
-    print ("a: it was always there alone forms a liquid substance on the ground.")
-    print ("b: it is always all there but you do not see it. When it automatically forms a larger particle so that you can see it.")
+    print ("a: it isn't always there. When it is there it forms a substance on the ground.")
+    print ("b: it automatically forms a larger particle so that you can see it in the air.")
     anted = input()
     if anted == ("a"):
         print ("Wrong!")
