@@ -99,6 +99,7 @@ def introab():
     print ("There is a person on stage they say:")
     print ("Welcome folks, we are the group of Abonegation.We make sure that there is respect that allows us to live here. Our job is to arrange everything in this city, so we make decisions. We are a neural group because we put others before ourselves.")
     print ("You need to come with us for your decision. You walk with them.")
+    keuzeabeinde()
 
 #amity intro uitleg & einde
 def introam():
@@ -146,11 +147,27 @@ def carecht():
     if antcar ==("b"):
         print ("You were wrong")
         print ("We have too large a population in this town and we don't want any liars here!")
-        print ("You yourself are condemned by your friends in Candor. You were killed by your friends...")
+        print ("You are condemned by your friends in Candor. You were killed by your friends...")
         print (end)
     else:
         print ("Not a option")
         carecht()
+
+#keuze ab met eindes
+def keuzeabeinde():
+    print ("You get to make your first choice about our government. Since you are part of it, you must make a decision for the city.")
+    print ("a: give more space to your place of residence b: give more space to build a new lab for erudite")
+    antab = input()
+    if antab ==("a"):
+        print ("So you think more about yourself than the rest that is not possible in this group.")
+        print ("You will be dragged to court yourself... You were punished your punishment is death.")
+        print (end)
+    if antab ==("b"):
+        print ("You made the right choice and live happily ever after.")
+        print (end)
+    else:
+        print ("Not a option")
+        keuzeabeinde()
 
 
 end = "The end"
