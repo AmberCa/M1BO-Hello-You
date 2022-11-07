@@ -235,7 +235,7 @@ def keuzedawall():
     print ("What do you get?")
     print ("a: sword  b: bow and arrow  c: bat  d: hide")
     antda1 = input().lower()
-    if antda1 ==("c") or antda1 ==("b"):
+    if antda1 ==("c") or antda1 ==("a"):
         print ("Oh no, they come closer and you can't defend yourself anymore... They took your weapon. You run away.")
         sleep(2)
         print ("You fall and the animals are over you. They rip you apart.")
@@ -243,7 +243,7 @@ def keuzedawall():
         print ("You are dead.")
         print (end)
         opnieuw()
-    elif antda1 ==("c"):
+    elif antda1 ==("b"):
         print ("You made it to a safer place but you are out of arrows!")
         sleep(2)
         vraagda2()
